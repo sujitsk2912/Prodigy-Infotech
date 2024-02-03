@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch | PRODIGY INFOTECH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <h2>Stopwatch</h2>
+        <p>Designed by sujit</p>
+    </header>
+
+    <div class="container">
+        <div class="container-box">
+            <div class="timer">
+                <h2>
+                    <p id="hr">00:</p>
+                    <p id="min">00:</p>
+                    <p id="sec">00.</p>
+                    <p id="ms">00</p>
+                </h2>
+            </div>
+            <!-- <div class="min">
+                <h4>
+                    <p>Hr</p>
+                    <p>min</p>
+                    <p>sec</p>
+                    <p>ms</p>
+                </h4>
+            </div> -->
+
+            <div class="buttons">
+                <i id="start" class='bx bx-play-circle' onclick="startStopwatch()"></i>
+                <i id="pause" class='bx bx-pause-circle' onclick="pauseStopwatch()"></i>
+                <i id="reset" class='bx bx-reset' onclick="resetStopwatch()"></i>
+            </div>
+            
+
+            <div class="str-stp-name">
+                <p>start</p>
+                <p>stop</p>
+                <p>reset</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; all right reserved by sujit khangar
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
