@@ -1,0 +1,253 @@
+/* Import Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+  /* background: #076585; 
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  background: linear-gradient(to right, #E2E2E2, #9ca5c0);  */
+ 
+  background: #ECE9E6; 
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+
+}
+
+header {
+  color: #160f58;
+  text-shadow: 2px 2px 5px rgb(127, 125, 125);
+}
+
+header h2 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+header p {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.container {
+  padding-left: 37%;
+}
+
+.container .wrapper {
+  /* background: #076585; */
+  background: rgb(34, 48, 195);
+  background: linear-gradient(67deg, rgba(34, 48, 195, 1) 5%, rgba(15, 167, 185, 1) 100%);
+  height: auto;
+  width: 25rem;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.578);
+}
+
+.wrapper .search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search input {
+  height: 38px;
+  width: 17rem;
+  font-size: 15px;
+  border-radius: 50px;
+  padding-left: 20px;
+  outline: 0;
+  border: 0;
+}
+
+.search button i {
+  font-size: 20px;
+}
+
+.search button {
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  margin-left: 8px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.search button:hover{
+opacity: 65%;
+}
+
+.wrapper .weather {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.weather #weatherImg {
+  margin-top: 20px;
+  width: 9rem;
+}
+
+.weather #weatherCondition{
+  padding-bottom: 10px;
+  letter-spacing:2px;
+}
+
+.wrapper .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.details img {
+  height: 40px;
+}
+
+.details .col {
+  flex-direction: column;
+}
+
+.col img {
+  margin-bottom: 10px;
+}
+
+.details p {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+footer {
+  text-align: center;
+  color: #160f58;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 5px 5px 10px rgb(105, 97, 97);
+  padding-top: 9vh;
+  padding-bottom: 10px;
+  bottom: 0;
+}
+
+
+/* --------- Media queries for responsive design -------------*/
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .wrapper{
+    height: max-content;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    padding-left: 5%;
+  }
+
+  .wrapper .search {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search input {
+    width: 85%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .search button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 5%;
+  }
+
+  header h2 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 8px;
+  }
+
+  .wrapper .weather {
+    font-size: 18px;
+  }
+
+  .details img {
+    height: 30px;
+  }
+
+  .details p {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 8%;
+  }
+
+  .search input {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 6px;
+  }
+
+  .wrapper .weather {
+    font-size: 16px;
+  }
+
+  .details img {
+    height: 25px;
+  }
+
+  .details p {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+}
